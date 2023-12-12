@@ -1,0 +1,131 @@
+.featured-posts {
+    background: var(--green-bg);
+    color: white;
+}
+
+.featured-posts h2 {
+    font-size: 2.25em;
+    line-height: 1.2;
+}
+
+.featured-posts h3 {
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.posts {
+    margin-top: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    background-color: white;
+    width: 25%;
+    color: black;
+    font-weight: 500;
+    white-space: pre-wrap;
+    max-width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+    display: inline-block;
+    text-align: center;
+    padding: 36px;
+}
+
+.post .title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.post .excerpt {
+
+}
+
+.post:nth-child(4n + 2) {
+    margin-left: 24px; 
+    margin-right: 12px;
+}
+
+.post:nth-child(4n + 3) {
+    margin-left: 12px;
+    margin-right: 24px; 
+}
+
+.posts+button {
+    margin: 60px auto 0;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .posts {
+        flex-wrap: wrap;
+    }
+    .post {
+        width: 33.33%; 
+        &:nth-child(4n - 1),
+        &:nth-child(4n) {
+          margin-top: 24px; /* Adjust the margin value as needed */
+        }
+    }
+    .post:nth-child(4n + 2) {
+        margin-left: 0px; 
+        margin-right: 0px;
+    }
+    .post:nth-child(4n + 3) {
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+.post {
+    width: 100%; 
+    font-size: 1em;
+    &:nth-child(4n + 2),
+    &:nth-child(4n + 3) {
+        margin-top: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .burger-menu {
+        margin: 1rem 0 1rem 1rem;
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .burger-menu svg {
+        height: 24px;
+        width: 24px;
+        margin-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .featured-posts h2 {
+        font-size: 1.8em;
+    }
+    
+    .featured-posts h3 {
+        font-size: 1em;
+    }
+}

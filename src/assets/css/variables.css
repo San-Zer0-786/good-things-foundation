@@ -1,0 +1,17 @@
+/* variables.css */
+  
+@import url("https://p.typekit.net/p.css?s=1&k=yig1cun&ht=tk&f=40446&a=29994846&app=typekit&e=css");
+
+@font-face {
+    font-family:"Rubik";
+    src:url("https://use.typekit.net/af/efda02/00000000000000007735b914/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/efda02/00000000000000007735b914/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/efda02/00000000000000007735b914/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+:root {
+    --green: #2f8375;
+    --green-bg: #367d91;
+    --red: #cf1b46;
+    --grey-bg:#ececec;
+    --font: "Rubik",sans-serif; 
+}

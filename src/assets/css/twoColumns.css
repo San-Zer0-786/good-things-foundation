@@ -1,0 +1,75 @@
+  .two-column {
+    display: flex;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+  }
+
+  .column {
+    width: 50%;
+  }
+  
+  .column-left {
+    position: relative;
+    /* Adjust column width or styles as needed */
+  }
+  
+  .column-right {
+    flex: 1;
+    background-color: var(--green);
+    color: #fff;
+    position: relative;
+  }
+  
+  .column-right .icon {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .column-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit:cover;
+    object-position:center;
+    display:block; /*to make it behave as div and avoir whitespace issue*/
+  }
+
+  .column-right h2 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .column-right .content p {
+    fill: #fff;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .two-column {
+      flex-direction: row;
+    }
+    .column {
+      width: 100%;
+      min-height: 25vh;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .column-right h2 {
+      font-size: 1.5em;
+    }
+    .column-right .content p {
+      font-size: 1.1em;
+    }
+  }

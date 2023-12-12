@@ -1,0 +1,159 @@
+/* global.css */
+
+@import 'variables.css';
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: var(--font);
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border-radius: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: .15em solid;
+  text-transform: none;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: .66667em;
+  width: 100%;
+  transition: opacity .25s;
+  width: auto;
+  cursor: pointer;
+}
+
+button.red {
+  background: #fff;
+  border-color: #fff;
+  padding: .66667em 1.5em;
+  color:  var(--red); 
+  font-size: 1em;
+}
+
+button.red-bg {
+  background: var(--red);
+  border-color: var(--red);
+  padding: .66667em 1.5em;
+  color:  white; 
+  font-size: 1em;
+}
+
+button.red-bg:hover {
+  background: var(--green-bg);
+  border-color: var(--green-bg);
+}
+
+button.green {
+  background: var(--green); 
+  border-color: #fff;
+  padding: .66667em 1.5em;
+  color:  white; 
+  font-size: 1em;
+}
+
+button.red:hover {
+  background: var(--green-bg); 
+  border-color: var(--green-bg); 
+  color: #fff;
+}
+
+button.green:hover {
+  background: white; 
+  border-color: var(--green-bg); 
+  color: var(--green-bg);
+}
+
+button.black-border {
+  border: 2px solid black;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.section-border {
+  border-top: 1px solid #ccc;
+}
+
+.section-content {
+  background-color: #fff;
+  color: var(--green); 
+  padding: 1.5rem;
+  max-width: 40rem;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 400px) {
+  .section .container {
+  }
+
+  .section-padding {
+    padding: 3.375rem 1rem;
+
+  }
+  
+}
+
+@media only screen and (min-width: 25em) {
+  .section .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .section-padding {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 45em) {
+  .section .container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .section-padding {
+    padding-bottom: 2.25rem;
+    padding-top: 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 85em) {
+  .section .container {
+      padding-left: 5.0625rem;
+      padding-right: 5.0625rem;
+  }
+
+  .section-padding {
+    padding-bottom: 5.0625rem;
+    padding-top: 5.0625rem;
+  }
+}
