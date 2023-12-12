@@ -57,7 +57,7 @@ export default {
       },
       twoColumnsData: {
         columnImage: "src/assets/images/column-bg-image.jpg",
-        columnTitle: "We are a social change charity, helping people to imporve their lives through digital.",
+        columnTitle: "We are a social change charity, helping people to improvetheir lives through digital.",
         columnContent: "We tackle the most pressing issues of our time, working with partners in thousands of communities across the UK and further afield",
         buttonText: "Learn more about us",
       },
