@@ -159,6 +159,13 @@ header .container {
         padding-left: 0;
         padding-right: 0;
     }
+    
+    .main-header .logo {
+        height: 2.5em;
+    }
+    .standard-header__menu-text {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 420px) {
